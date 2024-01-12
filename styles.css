@@ -1,0 +1,202 @@
+:root{
+    --background: #101010;
+    --on-background: #f2f2f2;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+* { margin: 0; padding: 0 }
+
+body{
+    color: var(--on-background);
+    font-family: Arial,sans-serif;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div{
+    display: block;
+    
+}
+
+body{
+    font-family: Arial,  sans-serif;
+}
+
+button{
+    border: 0px;
+    color: inherit;
+    font: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+.container-nav{
+    position: fixed;
+    display: flex;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 24px;
+    left: 0%;
+    right: 0%;
+}
+
+.container-nav-slider{
+    width: 166px;
+    height: 48px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(242, 242, 242, .05);
+    border: 1px solid rgba(242, 242, 242, .1);
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: 0.3s;
+    display: flex;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+    .container-nav-slider:hover{
+        background-color: rgba(242, 242, 242, .08);
+    }
+
+.container-nav-login_box{
+    width: 180px;
+    height: 48px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(242, 242, 242, .05);
+    border: 1px solid rgba(242, 242, 242, .1);
+    border-radius: 14px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1);
+    display: flex;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.wrapper-nav{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.wrapper-nav-center{
+    width: 180px;
+    height: 56px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+
+
+.wrapper-nav-signup{
+    z-index: -1;
+    width: 88px;
+    height: 42px;
+    background-color: rgba(242, 242, 242, .83);
+    border-radius: 10px;
+    color: #101010;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:0.3s;
+}
+    .wrapper-nav-signup:hover{
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+.wrapper-nav-login{
+    z-index: -1;
+    width: 88px;
+    height: 42px;
+    background-color: rgba(242, 242, 242, .0);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:0.3s;
+}
+    .wrapper-nav-login:hover{
+        background-color: rgba(242, 242, 242, .1);
+    }
+
+.wrapper-nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-nav-name{
+    letter-spacing: 0;
+    font-family: Neue Montreal, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    color: var(--on-background);
+    text-decoration: none;
+}
+
+.wrapper-nav-resume_link{
+    color: grey;
+    text-decoration: none;
+}
+
+.wrapper-nav-slider_item{
+    width: 80px;
+    height: 36px;
+    color: var(--on-background);
+    text-align: center;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1);
+    display: flex;
+}
+    .wrapper-nav-slider_item:hover{
+        background-color:rgba(242, 242, 242, .05);
+    }
+
+.wrapper-nav-indicator{
+    z-index: -1;
+    width: 80px;
+    height: 36px;
+    background-color: rgba(242, 242, 242, .05);
+    border-radius: 18px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.icon-nav-indicator{
+    width: 24px;
+    height: 4px;
+    background-color: var(--on-background);
+    border-radius: 2px;
+    margin-bottom: -2px;
+    margin-left: 33px;
+    box-shadow: 0 2px 25px 2px #fff;
+}
+
+.icon-nav-spacer{
+    padding-left: 5px;
+    padding-right: 5px;
+}
